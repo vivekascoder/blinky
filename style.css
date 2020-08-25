@@ -8,6 +8,7 @@ font-family: 'Alata', sans-serif;
     padding: 0;
     font-family: 'Fira Code';
 }
+.link{color: white; text-decoration: none;}
 html{
     overflow-x: hidden;}
 body{
@@ -237,14 +238,14 @@ nav{
 .footer__logo__img{
     font-size: 4rem;
     text-align: center;
-    margin-left: 1rem;
+    margin-left:  1rem;
 }
 .footer__logo__title{
     font-size: 1.5rem;
     margin-top: 1rem;
 }
 .footer__desc{
-    width: 15rem;
+    width: 13rem;
 }
 .footer__desc__title{
     font-size: 1.6rem;
