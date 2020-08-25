@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+/* 
+font-family: 'Alata', sans-serif;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code';
+}
+html{
+    overflow-x: hidden;}
+body{
+    background-color: #212f3dff;
+    color: white;
+    max-width: 50rem;
+    margin: 0 auto;
+    position: relative;
+}
+nav{
+    position: fixed;
+    /* width: 100%; */
+    position: absolute;
+    left:0;
+    right:0;
+}
+.navbar{
+    background-color: #2e4053ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__title h3{
+    font-size: 1.75rem;
+}
+.navbar__logo{
+    padding: 0.5rem;
+    cursor: pointer;
+    position: relative;
+}
+.navbar__menu{
+    cursor: pointer;
+    position: relative;
+    padding: 0.6rem;
+}
+.navbar__logo:hover{
+    background-color: #ffffff49;
+}
+.line{
+    height: 0.15rem;
+    width: 100%;
+    background-color: #ffc300ff;
+}
+/* Handling the dropdown */
+.menubar__menu__logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.menubar__menu__logo:hover{
+    background-color: #ffffff49;    
+}
+.menubar__menu__dropdown{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color:  #ffc300ff ;
+    width: 12rem;
+    border-radius: 5px;
+    overflow-y: scroll;
+    height: 15rem;
+    z-index: 1;
+}
+.menubar__menu__dropdown__item{
+    padding: 0.5rem 2rem;
+    list-style: none;
+    text-align: center;
+    font-weight: 600;
+}
+.menubar__menu__dropdown__item:hover{
+    background-color: #0000003b;
+    font-size: 1.15rem;
+}
+.menubar__menu__dropdown:hover{
+    display: block;
+}
+.menubar__menu__logo:hover + .menubar__menu__dropdown{
+    display: block;
+}
+
+/* -----END---- */
+
+/* Handling profile... */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    height: 5rem;
+    width: 90%;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #34495eff;
+    border-bottom: 0.25rem solid #ffc300ff;
+    padding: 0.25rem;
+}
+.profile__image img{
+    width: 5rem;
+}
+.profile__about__desc{
+    font-size: 0.85rem;
+    word-spacing: -0.2rem;
+    color: rgb(192, 192, 192);
+}
+.profile__about__bio{
+    word-spacing: -0.4rem;
+}
+/* ----END---- */
+
+/* Handling Card */
+.card{
+    /* background-color: springgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 8px;
+}
+.card__dark{
+    background-color: #333;
+    padding: 0.5rem;
+    width: 10rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.card__dark__header{
+    color: rgb(221, 221, 221);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+}
+.card__dark__title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    padding: 0.5rem;
+}
+.card__dark__sign{
+    text-align: center;
+    font-size: 0.75rem;
+    color: #cfcfcf;
+    padding: 0.55rem;
+    word-spacing: -0.3rem;
+}
+.card__light{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #fff;
+    color: white;
+    padding: 0.5rem;
+    width: 15rem;
+}
+/* ----END---- */
+
+.socialbar{
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #34495eff;
+    border-bottom: 0.25rem solid #ffc300ff;
+    width: 90%;
+}
+.social__item{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.social__item i{
+    font-size: 1.5rem;
+}
+.social__item:hover{
+    background-color: #0000003b;
+}
+
+.linkbox{
+    border-radius: 2rem;
+    background-color: #34495eff;
+    border-bottom: 0.25rem solid #ffc300ff;
+    width: 90%;
+}
+.powerline-container{
+    margin-left: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+.linkbox__title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.75rem;
+    padding: 1rem 1.5rem 0.1rem 1.5rem;
+}
+.linkbox__date{
+    padding: 0rem 1.5rem;
+    font-weight: 500;
+    font-size: 0.90rem;
+    color: rgb(207, 207, 207);
+} 
+.linkbox__desc{
+    font-family: 'Alata', sans-serif;
+    padding: 0.5rem 1.5rem;
+}
+.linkbox__button{
+    display: block;
+    margin: 0.5rem 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-decoration: none;
+    background-color: #ffc300ff;
+    width: 8rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: -0.3rem;
+}
+
+/* Footer */
+.footer{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #34495eff;
+}
+.footer__logo__img{
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+.footer__logo__title{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.footer__desc{
+    width: 15rem;
+}
+.footer__desc__title{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+}
+.footer__desc p{
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+}
+#download-btn{
+    background-color: crimson;
+}
+.copyright{
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    padding: 1rem;
+}

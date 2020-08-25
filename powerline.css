@@ -1,0 +1,72 @@
+/*
+Name: Powerline.css
+Author: @vivekascoder (Github/Facebook/Instagram/Gmail)
+Email: vivekascoder@gmail.com
+Website: https://github.com/vivekascoder/powerline.css
+*/
+:root{
+    --component-0-color: #bd93f9;
+    --component-1-color: #8be9fd;
+    --component-2-color: #6272a4;
+    --component-3-color: #50fa7b;
+    --component-4-color: #ffb86c;
+    --component-5-color: #ff79c6;
+    --component-6-color: yellow;
+    --component-7-color: #ff5555;
+    --component-8-color: #f8f8f2;
+    --component-9-color: royalblue;
+}
+/* #8be9fd  #ff5555 */
+/* Font: FiraCode */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+/* Dealing with the Powerline */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Code';
+}
+.powerline{
+    display: flex;
+    justify-content: left;
+    margin-top: 0.5rem;
+}
+.powerline__component{
+    background-color: yellow;
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+    padding: 3px 1.25rem;
+    margin-right: -14px;
+    cursor: pointer;
+    clip-path: polygon(0% 0%, calc(100% - 14px) 0%, 100% 50%, calc(100% - 14px) 100%, 100% 100%, 0% 100%, 14px 50%);
+}
+.powerline__component:nth-child(1){
+    background-color: var(--component-0-color);
+}
+.powerline__component:nth-child(2){
+    background-color: var(--component-1-color);
+}
+.powerline__component:nth-child(3){
+    background-color: var(--component-2-color);
+}
+.powerline__component:nth-child(4){
+    background-color: var(--component-3-color);
+}
+.powerline__component:nth-child(5){
+    background-color: var(--component-4-color);
+}
+.powerline__component:nth-child(6){
+    background-color: var(--component-5-color);
+}
+.powerline__component:nth-child(7){
+    background-color: var(--component-6-color);
+}
+.powerline__component:nth-child(8){
+    background-color: var(--component-7-color);
+}
+.powerline__component:nth-child(9){
+    background-color: var(--component-8-color);
+}
+.powerline__component:nth-child(10){
+    background-color: var(--component-9-color);
+}
