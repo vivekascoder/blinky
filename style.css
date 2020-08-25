@@ -21,8 +21,9 @@ body{
 nav{
     position: fixed;
     /* width: 100%; */
-    position: absolute;
+    z-index: 2;
     left:0;
+    top: 0;
     right:0;
 }
 .navbar{
