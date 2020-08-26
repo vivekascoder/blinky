@@ -206,7 +206,14 @@ nav{
     font-weight: 500;
     font-size: 0.90rem;
     color: rgb(207, 207, 207);
-} 
+} .linkbox__video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkbox__video iframe{
+
+}
 .linkbox__desc{
     font-family: 'Alata', sans-serif;
     padding: 0.5rem 1.5rem;
