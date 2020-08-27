@@ -43,7 +43,6 @@ nav{
 .navbar__menu{
     cursor: pointer;
     position: relative;
-    padding: 0.6rem;
 }
 .navbar__logo:hover{
     background-color: #ffffff49;
@@ -56,11 +55,11 @@ nav{
 /* Handling the dropdown */
 .menubar__menu__logo{
     position: relative;
-    width: 100%;
-    height: 100%;
+    font-size: 1.25rem;
+    padding: 0.5rem;
 }
-.menubar__menu__logo:hover{
-    background-color: #ffffff49;    
+.menubar__menu__logo:hover{   
+    background-color: #ffffff49; 
 }
 .menubar__menu__dropdown{
     display: none;
@@ -79,6 +78,7 @@ nav{
     list-style: none;
     text-align: center;
     font-weight: 600;
+    transition: 0.2s all ease-out;
 }
 .menubar__menu__dropdown__item:hover{
     background-color: #0000003b;
